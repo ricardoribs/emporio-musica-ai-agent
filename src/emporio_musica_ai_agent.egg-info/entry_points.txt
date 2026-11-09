@@ -1,0 +1,2 @@
+[console_scripts]
+emporio-agent = emporio_agent.cli:main

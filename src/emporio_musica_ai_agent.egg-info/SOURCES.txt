@@ -1,0 +1,13 @@
+README.md
+pyproject.toml
+src/emporio_agent/__init__.py
+src/emporio_agent/__main__.py
+src/emporio_agent/cli.py
+src/emporio_agent/config.py
+src/emporio_musica_ai_agent.egg-info/PKG-INFO
+src/emporio_musica_ai_agent.egg-info/SOURCES.txt
+src/emporio_musica_ai_agent.egg-info/dependency_links.txt
+src/emporio_musica_ai_agent.egg-info/entry_points.txt
+src/emporio_musica_ai_agent.egg-info/requires.txt
+src/emporio_musica_ai_agent.egg-info/top_level.txt
+tests/test_config.py
