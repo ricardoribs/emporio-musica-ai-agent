@@ -1,9 +1,0 @@
-google-genai<4.0.0,>=3.0.0
-python-dotenv<2.0.0,>=1.2.4
-pypdf<8.0.0,>=7.0.0
-scikit-learn<2.0.0,>=1.9.1
-rich<16.0.0,>=15.0.0
-
-[dev]
-pytest<10.0.0,>=9.2.0
-ruff<1.0.0,>=0.17.4
