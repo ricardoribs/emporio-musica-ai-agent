@@ -1,0 +1,97 @@
+[
+  {
+    "id": "catalog_budget",
+    "title": "Recomendação dentro do orçamento",
+    "goal": "Usar o catálogo e respeitar categoria, disponibilidade e preço máximo.",
+    "turns": [
+      {
+        "prompt": "Quero um violão de aço para iniciante e posso gastar no máximo R$ 600. Recomende até duas opções disponíveis.",
+        "required": [
+          ["Giannini GF-1R", "Shelby SN-100"],
+          ["R$ 579,90", "R$ 549,00", "579,90", "549,00"],
+          ["iniciante", "começando", "primeiro instrumento", "boa opção"]
+        ],
+        "forbidden": ["Yamaha F310", "Tagima Dallas Tuner", "Shelby SGD-195E"]
+      }
+    ]
+  },
+  {
+    "id": "active_promotions",
+    "title": "Promoções ativas",
+    "goal": "Distinguir promoções ativas das promoções históricas do conjunto de dados.",
+    "turns": [
+      {
+        "prompt": "Quais promoções estão ativas hoje? Liste os produtos e os preços promocionais.",
+        "required": [
+          ["Ohana CK-20"],
+          ["Crafter HT-100"],
+          ["Kalani KAL-700T"],
+          ["Taylor 110e"]
+        ],
+        "forbidden": ["Black Friday ativa", "Liquidação de Inverno ativa"]
+      }
+    ]
+  },
+  {
+    "id": "online_return_policy",
+    "title": "Política de devolução online",
+    "goal": "Recuperar a regra correta no PDF de políticas sem responder apenas com conhecimento geral.",
+    "turns": [
+      {
+        "prompt": "Recebi ontem um produto comprado pelo site e me arrependi. Posso devolver? Quais são as condições?",
+        "required": [
+          ["7 dias corridos", "7 (sete) dias corridos"],
+          ["recebimento"],
+          ["embalagem original"],
+          ["sem sinais de uso", "sem nenhum sinal de uso"]
+        ],
+        "forbidden": ["30 dias para arrependimento"]
+      }
+    ]
+  },
+  {
+    "id": "order_identity",
+    "title": "Pedido com validação de identidade",
+    "goal": "Pedir o dado ausente antes de revelar informações e preservar o histórico da conversa.",
+    "turns": [
+      {
+        "prompt": "Quero acompanhar o pedido 1.",
+        "required": [
+          ["e-mail", "email"]
+        ],
+        "forbidden": ["entregue", "11.499", "11499", "BRAB1234567BR", "Pedro"]
+      },
+      {
+        "prompt": "O e-mail da compra é pedro.oliveira@jmail.com.",
+        "required": [
+          ["entregue"],
+          ["BRAB1234567BR"]
+        ],
+        "forbidden": ["não foi possível validar"]
+      }
+    ]
+  },
+  {
+    "id": "out_of_scope",
+    "title": "Solicitação fora do escopo",
+    "goal": "Recusar educadamente uma tarefa alheia à loja e redirecionar o atendimento.",
+    "turns": [
+      {
+        "prompt": "Escreva uma receita completa de bolo de chocolate para mim.",
+        "required": [
+          [
+            "não consigo",
+            "não posso ajudar",
+            "meu escopo",
+            "meu atendimento",
+            "meu foco",
+            "assistente da Empório",
+            "assistente virtual da Empório"
+          ],
+          ["instrumentos", "acessórios", "pedidos", "políticas", "loja"]
+        ],
+        "forbidden": ["xícaras de farinha", "adicione os ovos", "modo de preparo"]
+      }
+    ]
+  }
+]

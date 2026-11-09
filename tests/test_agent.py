@@ -66,6 +66,7 @@ def test_configures_chat_with_model_and_tools() -> None:
     assert config.system_instruction == SYSTEM_INSTRUCTION
     assert config.tools is not None
     assert len(config.tools) == 5
+    assert config.temperature == 0.2
     assert config.automatic_function_calling is not None
     assert config.automatic_function_calling.maximum_remote_calls == 6
     assert config.thinking_config is not None

@@ -29,6 +29,7 @@ dev = [
 [project.scripts]
 emporio-agent = "emporio_agent.cli:main"
 emporio-build-db = "emporio_agent.database:main"
+emporio-evaluate = "emporio_agent.evaluation:main"
 emporio-search-policies = "emporio_agent.policy_retriever:main"
 emporio-web = "emporio_agent.web:main"
 

@@ -59,6 +59,7 @@ class EmporioAgent:
         config = types.GenerateContentConfig(
             system_instruction=SYSTEM_INSTRUCTION,
             tools=list(TOOL_FUNCTIONS),
+            temperature=0.2,
             automatic_function_calling=types.AutomaticFunctionCallingConfig(
                 maximum_remote_calls=6,
             ),
