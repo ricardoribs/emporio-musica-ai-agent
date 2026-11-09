@@ -7,6 +7,7 @@ from dotenv import load_dotenv
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 DATA_DIR = PROJECT_ROOT / "data"
 DATABASE_PATH = DATA_DIR / "store.db"
+POLICIES_PATH = DATA_DIR / "políticas_da_loja.pdf"
 
 load_dotenv()
 
