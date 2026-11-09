@@ -24,6 +24,7 @@ dev = [
 
 [project.scripts]
 emporio-agent = "emporio_agent.cli:main"
+emporio-build-db = "emporio_agent.database:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]
