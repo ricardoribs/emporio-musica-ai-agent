@@ -15,7 +15,7 @@ load_dotenv()
 @dataclass(frozen=True, slots=True)
 class Settings:
     gemini_api_key: str
-    gemini_model: str = "gemini-2.5-flash"
+    gemini_model: str = "gemini-3.5-flash-lite"
 
 
 def get_settings() -> Settings:
@@ -26,5 +26,5 @@ def get_settings() -> Settings:
 
     return Settings(
         gemini_api_key=api_key,
-        gemini_model=os.getenv("GEMINI_MODEL", "gemini-2.5-flash"),
+        gemini_model=os.getenv("GEMINI_MODEL", "gemini-3.5-flash-lite"),
     )
